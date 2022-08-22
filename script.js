@@ -58,7 +58,11 @@ for (var i = 0; i < passwordLength; i++) {
 }
 
 // once password is generated, it should be displayed on page
-
+function writePassword() {
+    var password = generatePassword();
+    var passwordText = document.querySelector('#password');
+    passwordText.value = password;
+}
 
 
 
