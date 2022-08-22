@@ -7,7 +7,7 @@
 
 ## Description
 This is a password generator I created using javaScript.
-[Link to live site]()
+[Link to live site](https://tedtalktimmy.github.io/pwd.generator-jS/)
 
 ## Visuals
 ![password-generator-screenshot](password-generator-screenshot.jpg)
