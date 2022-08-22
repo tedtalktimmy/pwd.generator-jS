@@ -18,10 +18,38 @@ if (passwordLength >= 8 && passwordLength <= 12) {
     var numbers = confirm('has numbers?');
     var special = confirm('has special characters?');
     }
+// prompt to choose at least one character type if no character types are selected
+if (!upper && !lower && !numbers && !special) {
+    alert(' at least one character type needs to be selected to generate password');
+    // confirm input
+    return generatePassword();
+}
+// code for all available character options
+if (lower) {
+    var lower = 'abcdefghijklmnopqrstuvwxyz'
+} else {
+    var lower = '';
+}
+if (upper) {
+    var upper = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+} else {
+    var upper = '';
+}
+if (numbers) {
+    var numbers = '0123456789';
+} else {
+    var numbers = '';
+}
+if (special) {
+    var special = "!#$%&'()*+,-./:;<=>?@[\]^_`{|}~"
+} else {
+    var special = '';
 }
 
-// when asked for character types to include in password, 
-// user confirms whether or not to include lowercase, uppercase, numeric, and/or special characters
+var possible = lower + upper + numbers + special;
+
+}
+
 
 // user answers each prompt, input should then be validated and at least one character type selected
 
