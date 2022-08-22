@@ -48,14 +48,18 @@ if (special) {
 
 var possible = lower + upper + numbers + special;
 
+// after answering all prompts, password is generated to match criteria
+var password = '';
+for (var i = 0; i < passwordLength; i++) {
+    var realRandom = possible[Math.floor(Math.random() * possible.length)];
+    password += realRandom;
+}
+    return password;
 }
 
-
-// user answers each prompt, input should then be validated and at least one character type selected
-
-// after answering all prompts, password is generated to match criteria
-
 // once password is generated, it should be displayed on page
+
+
 
 
 // Add even listener to generate button
